@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: #000;
+}
+
+header {
+    height: 70px;
+    margin: 1px 1px 1px 1px;
+    padding: 20px 1px 1px 1px;
+}
+
+#logo {
+    margin-left: 20px;
+    float: left;
+}
+
+nav {
+    overflow: hidden;
+    float: right;
+}
+
+nav li {
+    float: left;
+    list-style: none;
+}
+
+nav li a {
+    font-size: 20px;
+    text-decoration: none;
+    padding: 30px;
+    color: #e2b8aa;
+    text-transform: uppercase;
+}
+
+main {
+    text-align: center;
+}
+
+#home {
+    font-size: 25px;
+    height: 250px;
+    margin: 250px 1px 1px 1px;
+    padding: 30px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#quote {
+    font-size: 18px;
+    border-top-style: solid;
+    margin-top: 300px;
+    padding: 30px;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#projects {
+    font-size: 25px;
+    height: 250px;
+    margin: 250px 1px 1px 1px;
+    padding: 100px;
+    color: #fff;
+}
+
+#about {
+    font-size: 25px;
+    height: 250px;
+    margin: 250px 1px 1px 1px;
+    padding: 100px;
+    text-align: left;
+    
+}
+
+h3 {
+    margin-bottom: 15px;
+    text-align: left;
+    color: #c22085;
+    text-transform: uppercase;
+}
+
+h4 {
+    margin-bottom: 15px;
+    text-align: left;
+    color: #2d9687;
+    text-transform: uppercase;
+}
+
+#projectsDespription {
+    border: 1px solid;
+    border-color: #c22085;
+    padding: 0 15px;
+    text-align: left;
+}
+
+#viewProjects {
+    text-align: left;
+    text-decoration: none;
+    color: #c22085;
+}
+
+.DescriptionFirstPart {
+    color: #2d9687;
+}
+
+.DescriptionSecondPart {
+    color: #e9b171;
+}
+
+.DescriptionThirdPart {
+    color: #2d9687;
+}
+
+#viewPortfolio {
+    text-decoration: none;
+    color: #fff;
+}
+
+#contact {
+    font-size: 20px;
+    height: 250px;
+    margin: 50px 1px 1px 1px;
+    padding: 100px;
+    text-align: left;
+}
+
+h5 {
+    margin-bottom: 15px;
+    text-align: left;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+footer_bottom {
+    overflow: hidden;
+    padding: 30px;
+    display: block;
+    margin: 20 20 20 20px;
+    ;
+}
