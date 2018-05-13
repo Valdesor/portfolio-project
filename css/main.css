@@ -72,12 +72,22 @@ h2 {
     color: #fff;
 }
 
-#about {
-    font-size: 25px;
-    margin: 250px 1px 1px 1px;
-    padding: 100px;
-    text-align: left;
-    
+.wrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.wrapper {
+  border: 2px solid #000;
+  border-radius: 5px;
+  background-color: #fff4e6;
+}
+.wrapper > div {
+  border: 1px solid #ffa94d;
+  border-radius: 5px;
+  background-color: #ffd8a8;
+  padding: 1em;
+  color: #d9480f;
 }
 
 h3 {
@@ -92,9 +102,10 @@ h4 {
     text-align: left;
     color: #2d9687;
     text-transform: uppercase;
+    font-size: 25px;
 }
 
-#projectsDespription {
+.projectsDespription {
     border: 1px solid;
     border-color: #c22085;
     padding: 0 15px;
@@ -122,6 +133,7 @@ h4 {
 #viewPortfolio {
     text-decoration: none;
     color: #fff;
+    border: 1px solid;
 }
 
 #contact {
@@ -136,12 +148,22 @@ h5 {
     text-align: left;
     color: #fff;
     text-transform: uppercase;
+    font-size: 25px;
+}
+.box2 {
+    margin-top: 20px; 
 }
 
-footer_bottom {
-    overflow: hidden;
-    padding: 30px;
-    display: block;
-    margin: 20 20 20 20px;
-    ;
+#about {
+   padding: 100px;
+}
+
+#faceImg {
+    text-align: center;
+    margin-top: 90px;
+}
+
+#box1 {
+    font-size: 25px;
+    text-align: justify;
 }

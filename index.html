@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF8">
+    <meta charset="UTF-8">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/greating.css">
-    <link rel="stylesheet" href="css/preloader.css"> 
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/greating.css">
+    <link rel="stylesheet" href="/css/preloader.css">
+    <link rel="stylesheet" href="/css/fadeOutLeft.css"
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 </head>
 <body>
-    <script type="text/javascript" src="/js/preloader.js"></script>
+    <script src="/js/preloader.js"></script>
     <header>
         <div id="logo">
                 <a href="index.html"><img src="img/logo.svg">
         </div>
-        <nav>
+        <nav id="navigation">
             <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#">projects</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">contact</a></li>
+                <li><a href="#home">home</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
         </nav>
     </header>
     <section id="home">
         <div>
-            <h1>
+            <p>
                 <span class="word gr">Greatings!</span>
                 <span class="word he">Hello</span>
                 <span class="word ha">Hallo</span>
                 <span class="word jap">こんにちは</span>
-                </h1>
+                <p>
                 </div>
                 <br>
                 <br>
@@ -42,7 +44,22 @@
     </section>
     <section id="projects">
         <h3>Projects</h3>
-        <div id="projectsDespription">
+        <div class="projectsDespription">
+            <p>Here is the example of my Website portfolio..</p>
+            <a id="viewProjects" href="https://github.com/Valdesor">View projects
+                </a>
+        </div>
+        <div class="projectsDespription">
+            <p>Here is the example of my Website portfolio..</p>
+            <a id="viewProjects" href="https://github.com/Valdesor">View projects
+                </a>
+        </div>
+        <div class="projectsDespription">
+            <p>Here is the example of my Website portfolio..</p>
+            <a id="viewProjects" href="https://github.com/Valdesor">View projects
+                </a>
+        </div>
+        <div class="projectsDespription">
             <p>Here is the example of my Website portfolio..</p>
             <a id="viewProjects" href="https://github.com/Valdesor">View projects
                 </a>
@@ -50,11 +67,26 @@
     </section>
     <section id="about">
         <h4>About</h4>
+        <div class="wrapper">
         <div id="CvDespription">
+            <div id="box1">
             <p><span class="DescriptionFirstPart">I am a beginner web developer with no experience. I work and study to learn how to create high-performance and rich interactive websites that work on all platforms and devices.</span></p>
             <p><span class="DescriptionSecondPart">My websites are primarily hand-coded using HTML5, CSS3, SVG & JavaScript.With a strong emphasis on Progressive Enhancement, I look for creative ways to push the boundaries of website front-end code without compromising on browser support and performance.</span></p>
             <p><span class="DescriptionThirdPart">In a quest for always keeping myself updated, I read books and attend conferences & meetups.</span></p>
-            <a id="viewPortfolio" href="doc/CV.pdf">View full portfolio (PDF)</a>
+            <a id="viewPortfolio" href="/doc/CV.pdf">View full portfolio (PDF)</a>
+            </div>
+            <div id="box2">
+                <a href="https://www.facebook.com/"><img src="/img/facebook.svg" width="44" height="44"></img>
+                <a href="https://www.github.com"></a><img src="/img/GitHub.svg"></img>
+                <a href="https://www.github.com"></a><img src="/img/mail.svg"></img>
+                <a href="https://www.linkedin.com"></a><img src="/img/linkedin.svg"></img>
+            </div>
+        </div>
+        <div id="CvDespription">
+            <div id="faceImg">
+            <img src="/img/icon.png"></img>
+            </div>
+        </div>
         </div>
     </section>
     <footer id="contact">
@@ -67,11 +99,5 @@
             <p><button class="submit" type="submit"><img src="img/send-button.svg"></button></p>
         </form>
     </footer>
-    <footer_bottom class="social">
-        <a href="mailto:someone@example.com"><img src="img/mail.svg"></a>
-        <a href="facebook.com"><img src="img/facebook.svg"></a>
-        <a href="linkedin.com"><img src="img/linkedin.svg"></a>
-        <a href="github.com"><img src="img/GitHub.svg"></a>
-    </footer_bottom>
 </body>
 </html>
