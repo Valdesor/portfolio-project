@@ -2,12 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio</title>
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/greating.css">
     <link rel="stylesheet" href="/css/preloader.css">
-    <link rel="stylesheet" href="/css/fadeOutLeft.css"
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="/js/nav.js"></script>
 </head>
 <body>
     <script src="/js/preloader.js"></script>
@@ -16,12 +19,15 @@
                 <a href="index.html"><img src="img/logo.svg">
         </div>
         <nav id="navigation">
+            <div class="topnav" id="myTopnav">
             <ul>
                 <li><a href="#home">home</a></li>
                 <li><a href="#projects">projects</a></li>
                 <li><a href="#about">about</a></li>
                 <li><a href="#contact">contact</a></li>
+                <li><a id="menu" href="#" class="icon">&#9776;</a></li>
             </ul>
+            </div>
         </nav>
     </header>
     <section id="home">
@@ -77,9 +83,9 @@
             </div>
             <div id="box2">
                 <a href="https://www.facebook.com/"><img src="/img/facebook.svg" width="44" height="44"></img>
-                <a href="https://www.github.com"></a><img src="/img/GitHub.svg"></img>
-                <a href="https://www.github.com"></a><img src="/img/mail.svg"></img>
-                <a href="https://www.linkedin.com"></a><img src="/img/linkedin.svg"></img>
+                <a href="https://www.github.com/"></a><img src="/img/GitHub.svg"></img>
+                <a href="https://www.github.com/"></a><img src="/img/mail.svg"></img>
+                <a href="https://www.linkedin.com/"></a><img src="/img/linkedin.svg"></img>
             </div>
         </div>
         <div id="CvDespription">
@@ -92,11 +98,11 @@
     <footer id="contact">
         <h5>Contact</h5>
         <form id="sendbox">
-            <p><input name="name" placeholder="Your name"></p>
-            <p><input name="mail" placeholder="Your mail"></p>
-            <p><textarea name="message" cols="40" rows="6" required placeholder="Message"></textarea>
+            <p><input class="name" placeholder="Your name"></p>
+            <p><input class="mail" placeholder="Your mail"></p>
+            <p><textarea class="message" cols="40" rows="6" required placeholder="Message"></textarea>
             </p><input name="bezspama" type="text" style="display:none" value="" />
-            <p><button class="submit" type="submit"><img src="img/send-button.svg"></button></p>
+            <input class="btn" value="Send" type="submit">
         </form>
     </footer>
 </body>
