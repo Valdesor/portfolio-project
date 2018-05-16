@@ -2,108 +2,151 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/greating.css">
-    <link rel="stylesheet" href="/css/preloader.css">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="/js/nav.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <script src="/js/preloader.js"></script>
     <header>
-        <div id="logo">
-                <a href="index.html"><img src="img/logo.svg">
-        </div>
-        <nav id="navigation">
-            <div class="topnav" id="myTopnav">
-            <ul>
-                <li><a href="#home">home</a></li>
-                <li><a href="#projects">projects</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#contact">contact</a></li>
-                <li><a id="menu" href="#" class="icon">&#9776;</a></li>
-            </ul>
+        <div class="header-container">
+            <div class="logo">
+                <img src="img/logo.svg" alt="logo">
             </div>
-        </nav>
+            <input type="checkbox" id="menu-checkbox">
+            <nav role="navigation">
+                <label for="menu-checkbox" class="toggle-button" data-open="MENU" data-close="CLOSE" onclick></label>
+                <ul class="main-menu">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <section id="home">
-        <div>
-            <p>
-                <span class="word gr">Greatings!</span>
-                <span class="word he">Hello</span>
-                <span class="word ha">Hallo</span>
-                <span class="word jap">こんにちは</span>
-                <p>
+    <main>
+        <section class="top-slide">
+            <div class="top-container">
+                <div>
+                    <h2>GREATINGS</h2>
                 </div>
-                <br>
-                <br>
-            <p>I am Igor Bernatskyi.</p>
-            <p>I just started and tried to be trainee Front-end developer</p>
-            <script src="/js/animGreating.js"></script>
-    </section>
-    <section id="quote">
-        <h2>"Do what you love<br> Love what you do"</h2>
-    </section>
-    <section id="projects">
-        <h3>Projects</h3>
-        <div class="projectsDespription">
-            <p>Here is the example of my Website portfolio..</p>
-            <a id="viewProjects" href="https://github.com/Valdesor">View projects
-                </a>
-        </div>
-        <div class="projectsDespription">
-            <p>Here is the example of my Website portfolio..</p>
-            <a id="viewProjects" href="https://github.com/Valdesor">View projects
-                </a>
-        </div>
-        <div class="projectsDespription">
-            <p>Here is the example of my Website portfolio..</p>
-            <a id="viewProjects" href="https://github.com/Valdesor">View projects
-                </a>
-        </div>
-        <div class="projectsDespription">
-            <p>Here is the example of my Website portfolio..</p>
-            <a id="viewProjects" href="https://github.com/Valdesor">View projects
-                </a>
-        </div>
-    </section>
-    <section id="about">
-        <h4>About</h4>
-        <div class="wrapper">
-        <div id="CvDespription">
-            <div id="box1">
-            <p><span class="DescriptionFirstPart">I am a beginner web developer with no experience. I work and study to learn how to create high-performance and rich interactive websites that work on all platforms and devices.</span></p>
-            <p><span class="DescriptionSecondPart">My websites are primarily hand-coded using HTML5, CSS3, SVG & JavaScript.With a strong emphasis on Progressive Enhancement, I look for creative ways to push the boundaries of website front-end code without compromising on browser support and performance.</span></p>
-            <p><span class="DescriptionThirdPart">In a quest for always keeping myself updated, I read books and attend conferences & meetups.</span></p>
-            <a id="viewPortfolio" href="/doc/CV.pdf">View full portfolio (PDF)</a>
+                <div>
+                    <h2>I am beginner in Frontend</h2>
+                </div>
+                <div>
+                    <p>"Love what you do</p>
+                </div>
+                <div>
+                    <p>Do what you love"</p>
+                </div>
             </div>
-            <div id="box2">
-                <a href="https://www.facebook.com/"><img src="/img/facebook.svg" width="44" height="44"></img>
-                <a href="https://www.github.com/"></a><img src="/img/GitHub.svg"></img>
-                <a href="https://www.github.com/"></a><img src="/img/mail.svg"></img>
-                <a href="https://www.linkedin.com/"></a><img src="/img/linkedin.svg"></img>
+        </section>
+        <section class="specialize">
+            <div class="specialize-container">
+                <h3>I tried to create quality designs.</h3>
+                <p>I specialize in Web Design / Development and Graphic design</p>
+                <div class="specialize-cards">
+                    <div class="card">
+                        <div class="topcard">
+                            <img src="img/HTML5.svg" width="100" height="100" alt="HTML5">
+                        </div>
+                        <div class="bottom-card">
+                            <p>HyperText Markup Language 5</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="topcard">
+                            <img src="img/js.svg" width="100" height="100" alt="HTML5">
+                        </div>
+                        <div class="bottom-card">
+                            <p>JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="topcard">
+                            <img src="img/CSS3.svg" width="100" height="100" alt="HTML5">
+                        </div>
+                        <div class="bottom-card">
+                            <p>Cascading Style Sheets 3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio">
+            <h4>MY WORK</h4>
+            <p>Here is example of projects</p>
+            <div class="toggles">
+                <button id="showall">SHOW ALL</button>
+                <button id="webdev">WEB DEVELOPMENT</button>
+                <button id="webdesign">WEB DESIGN</button>
+                <button id="graphd">GRAPHIC DESIGN</button>
+            </div>
+            <div class="posts">
+                <div class="post webdev"><img src="img/Visual_Studio.svg" width="300" height="300" alt="react"></div>
+                <div class="post webdesign"><img src="img/graphic.jpg" width="300" height="300" alt="water"></div>
+                <div class="post graphd"><img src="img/fib.jpg" width="300" height="300" alt="water"></div>
+                <div class="post webdev"><img src="img/programming.png" width="300" height="300" alt="water"></div>
+                <div class="post webdesign"><img src="img/land.jpg" width="300" height="300" alt="water"></div>
+                <div class="post webdev"><img src="img/ima.jpg" width="300" height="300" alt="water"></div>
+                <div class="post webdev"><img src="img/ds.jpg" width="300" height="300" alt="water"></div>
+            </div>
+        </section>
+        <section class="brand-slider">
+            <h4>MY NEXT STEP</h4>
+            <p>will be</p>
+            <div class="owl-carousel">
+                <div><img src="img/mongodb.svg" width="100" height="50" alt="mongodb"></div>
+                <div><img src="img/Sass.svg" width="100" height="50" alt="mongodb"></div>
+                <div><img src="img/nodejs.svg" width="100" height="50" alt="mongodb"></div>
+                <div><img src="img/mongodb.svg" width="100" height="50" alt="mongodb"></div>
+                <div><img src="img/mongodb.svg" width="100" height="50" alt="mongodb"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+        <div class="about-us">
+            <h4>About me</h4>
+            <p>I am a beginner web developer with no experience. I work and study to learn how to create high-performance and rich interactive websites that work on all platforms<br>
+            and devices.My websites are primarily hand-coded using HTML5, CSS3, SVG & JavaScript.With a strong emphasis on Progressive Enhancement, 
+            I look for creative ways to push the boundaries of website front-end code without 
+            compromising on browser support and performance.
+            In a quest for always keeping myself updated, I read books and attend conferences & meetups.</p>
+                <a href="doc/CV.pdf">My CV</a>
+                <h4>Social Network</h4>
+                <div class="images">
+                    <a href="https://www.linkedin.com/in/igor-bernatskyi-006154135/"><img src="img/linkedin.svg" width="50" height="50" alt="linkedin"></a>
+                    <a href="https://github.com/Valdesor"><img src="img/GitHub.svg" width="50" height="50" alt="GitHub"></a>
+                    <a href="https://www.facebook.com/igor.bernazky?ref=bookmarks"><img src="img/facebook.svg" width="50" height="50" alt="facebook"></a>
+                </div>
+        </div>
+        <div class="tweets">
+            <h4>Latest tweets</h4>
+            <p><img src="img/twitter.svg" width="22" height="27" alt="Twitter">Check Out Dtbaker @Ardruino Sales notification #System</p>
+            <p><img src="img/twitter.svg" width="22" height="27" alt="Twitter">  realDonaldTrump Assad will never let them sell you out! #Peace</p>
+            <p><img src="img/twitter.svg" width="22" height="27" alt="Twitter">Check Out Dtbaker @Ardruino Sales notification #System</p>
+            <p><img src="img/twitter.svg" width="22" height="27" alt="Twitter">Check Out Dtbaker @Ardruino Sales notification #System</p>
+        </div>
+        <div class="contacts">
+            <h4>Contact</h4>
+            <div class="form">
+                <form>
+                    <input type="text" placeholder="Name" />
+                    <input type="text" placeholder="E-mail" />
+                    <input type="text" placeholder="Message" />
+                </form>
+                <button type="button1">SEND</button>
             </div>
         </div>
-        <div id="CvDespription">
-            <div id="faceImg">
-            <img src="/img/icon.png"></img>
-            </div>
         </div>
-        </div>
-    </section>
-    <footer id="contact">
-        <h5>Contact</h5>
-        <form id="sendbox">
-            <p><input class="name" placeholder="Your name"></p>
-            <p><input class="mail" placeholder="Your mail"></p>
-            <p><textarea class="message" cols="40" rows="6" required placeholder="Message"></textarea>
-            </p><input name="bezspama" type="text" style="display:none" value="" />
-            <input class="btn" value="Send" type="submit">
-        </form>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

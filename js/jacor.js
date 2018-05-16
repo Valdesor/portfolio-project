@@ -1,8 +1,7 @@
- $(document).ready(function(){
-    $("#menu").on("click","a", function (event) {
-        event.preventDefault();
-        var id  = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 1500);
-    });
+$(function(){
+$('a[href^="#"]').click(function(){
+var target = $(this).attr('href');
+$('html, body').animate({scrollTop: $(target).offset().top}, 800);//800 - длительность скроллинга в мс
+return false;
+});
 });
